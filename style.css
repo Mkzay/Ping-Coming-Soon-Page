@@ -148,9 +148,9 @@ footer .right {
         font-size: 20px;
     }
 
-    .first {
-        flex-direction: column;
-    }
+    /*.first {
+        flex-wrap: wrap;
+    }*/
 
     .second img {
         width: 600px;
