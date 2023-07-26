@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         // Check for valid email format
         if (!emailRegex.test(mail.value)) {
-          messages.push('Invalid email format');
+          messages.push('Please provide a valid email address');
         }
       }
   
