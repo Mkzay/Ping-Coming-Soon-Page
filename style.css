@@ -52,7 +52,7 @@ main p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .first input[type=text] {
@@ -60,12 +60,13 @@ main p {
     border: 1px solid hsl(223, 100%, 88%);
     border-radius: 24px;
     padding: 12px 80px;
-    font-weight: 300;
+    padding-left: 30px;
     font-size: 13px;
 }
 
-.first input[type=text]:focus {
-    border: none;
+.first input[type=text]::placeholder {
+    font-weight: 600;
+    color:  hsl(223, 100%, 88%);
 }
 
 .first #error {
@@ -88,7 +89,7 @@ main p {
     padding: 12px 80px;
     font-size: 13px;
     font-size: 11px;
-    font-weight: 300;
+    font-weight: 600;
     transition: .4s;
     box-shadow: 5px 5px 40px #888888;
     text-align: center;
@@ -124,6 +125,13 @@ footer .left a {
     padding: 18px;
 }
 
+footer .left a:hover {
+    color: #fff;
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
+    padding: 7px;
+}
+
 footer .right {
     text-align: center;
     font-size: 14px;
@@ -141,19 +149,10 @@ footer .right {
     }
 
     .first {
-        flex-direction: row;
-    }
-
-    /*.first input[type=text] {
-        width: 60%;
-        margin-bottom: 0px;
-    }
-
-    .first input[type=submit] {
-        width: 40%;
+        flex-direction: column;
     }
 
     .second img {
         width: 600px;
-    }*/
+    }
   }

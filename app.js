@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // For this example, we'll just show an alert indicating success.
         alert('Form submitted successfully!');
         // Uncomment the line below to submit the form programmatically.
-        // form.submit();
+        form.submit();
       }
     });
   
