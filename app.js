@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Display error messages or submit the form
       if (messages.length > 0) {
+        mail.style.borderColor = 'hsl(354, 100%, 66%)';
         errorElement.textContent = messages.join(', ');
         errorElement.style.display = 'block';
       } else {

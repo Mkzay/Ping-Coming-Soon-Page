@@ -64,6 +64,10 @@ main p {
     font-size: 13px;
 }
 
+.first input[type=text]:focus {
+    border: none;
+}
+
 .first #error {
     font-size: 11px;
     font-weight: 300;
