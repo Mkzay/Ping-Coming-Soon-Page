@@ -1,14 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:cursive
 }
 
 body {
     background: url(img/pexels-pixabay-414331.jpg) no-repeat center center/ cover;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
 }
+
+header {
+    margin: 70px 0px;
+}
+
+header img {
+    width: 62px;
+}
+
+main {
+    margin-bottom: 30px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 20px;
+}
+
+main span {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+main p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: hsl(209, 33%, 12%);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first input[type=text] {
+    width: 100%;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 24px;
+    padding: 12px 80px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.first input[type=submit] {
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    background-color: hsl(223, 87%, 63%);
+    padding: 12px 80px;
+    font-weight: 700;
+    transition: .4s;
+    box-shadow: 5px 5px 40px #888888;
+    text-align: center;
+}
+
+.first input[type=submit]:hover {
+    cursor: pointer;
+    background-color: hsl(223, 82%, 78%);
+}
+
+.second {
+    margin-bottom: 120px;
+}
+
+.second img {
+    width: 400px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+footer .left a {
+    color: hsl(223, 87%, 63%);
+    padding: 18px;
+}
+
+footer .right {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);;
+}
+
+
+/*#error {
+    font-size: 12px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+  }*/
+
+  @media screen and (min-width: 800px) {
+    main h1 {
+        font-size: 34px;
+    }
+
+    main p {
+        font-size: 20px;
+    }
+
+    .first {
+        flex-direction: row;
+    }
+
+    /*.first input[type=text] {
+        width: 60%;
+        margin-bottom: 0px;
+    }
+
+    .first input[type=submit] {
+        width: 40%;
+    }
+
+    .second img {
+        width: 600px;
+    }*/
+  }
