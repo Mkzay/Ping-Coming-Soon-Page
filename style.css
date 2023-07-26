@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:cursive
+}
+
+body {
+    background: url(img/pexels-pixabay-414331.jpg) no-repeat center center/ cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
