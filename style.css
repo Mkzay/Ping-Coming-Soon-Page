@@ -48,19 +48,18 @@ main p {
     color: hsl(209, 33%, 12%);
 }
 
-.first {
+.first form {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .first input[type=text] {
-    width: 100%;
+    width: 300px;
     border: 1px solid hsl(223, 100%, 88%);
     border-radius: 24px;
-    padding: 12px 80px;
-    padding-left: 30px;
+    padding: 12px;
     font-size: 13px;
 }
 
@@ -73,7 +72,7 @@ main p {
     font-size: 11px;
     font-weight: 300;
     width: 100%;
-    padding: 12px 80px;
+    padding: 12px;
     text-align: center;
     margin-top: -8px;
     color: hsl(354, 100%, 66%);
@@ -81,12 +80,12 @@ main p {
   }
 
 .first input[type=submit] {
-    width: 100%;
+    width: 300px;
     border: none;
     border-radius: 24px;
     color: #fff;
     background-color: hsl(223, 87%, 63%);
-    padding: 12px 80px;
+    padding: 14.4px 12px;
     font-size: 13px;
     font-size: 11px;
     font-weight: 600;
@@ -148,9 +147,25 @@ footer .right {
         font-size: 20px;
     }
 
-    /*.first {
-        flex-wrap: wrap;
-    }*/
+    .first form {
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .first input[type=text] {
+        width: 400px;
+    }
+
+    .first #error {
+        width: 30%;
+        position: absolute;
+        transform: translateY(0%);
+      }
+
+    .first input[type=submit] {
+        width: 200px;
+        margin-top: -1px;
+    }
 
     .second img {
         width: 600px;
